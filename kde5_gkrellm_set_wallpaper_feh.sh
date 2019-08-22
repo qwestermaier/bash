@@ -6,6 +6,7 @@
 # github.com: qwestermaier
 #
 # KDE5 gkrellm: set current Wallpaper in "feh" to enable invisible/tansparent gkrellm-themes
+# tested eith kde-neon 5.16 on KDE 5.16.4 - works with multi-monitor-setups if wallpaper is the same on all monitors
 #
 CURRENT_WALLPAPER_PLUGIN="`grep -m 1 'wallpaperplugin' ~/.config/plasma-org.kde.plasma.desktop-appletsrc | tail --bytes=+17`"
 echo "Currently set Wallpaper-Plugin: $CURRENT_WALLPAPER_PLUGIN"
