@@ -5,6 +5,8 @@
 # email: westermaier.quirin@gmail.com
 # github.com: qwestermaier
 #
+# KDE5 gkrellm: set current Wallpaper in "feh" to enable invisible/tansparent gkrellm-themes
+#
 CURRENT_WALLPAPER_PLUGIN="`grep -m 1 'wallpaperplugin' ~/.config/plasma-org.kde.plasma.desktop-appletsrc | tail --bytes=+17`"
 echo "Currently set Wallpaper-Plugin: $CURRENT_WALLPAPER_PLUGIN"
 
