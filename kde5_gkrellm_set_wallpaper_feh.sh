@@ -20,7 +20,7 @@ NEW_SEARCH_COMMAND_BLOCK="grep -m 1 -A 4 $NEW_SEARCH_STRING ~/.config/plasma-org
 CURRENT_WALLPAPER_IMAGE_BLOCK="`eval $NEW_SEARCH_COMMAND_BLOCK`"
 #echo "Configuration of currently set Wallpaper-Plugin: $CURRENT_WALLPAPER_IMAGE_BLOCK"
 
-CURRENT_WALLPAPER_IMAGE="`echo $CURRENT_WALLPAPER_IMAGE_BLOCK | tr ' ' '\n' | grep 'Image=' | tail --bytes=+14`"
+CURRENT_WALLPAPER_IMAGE="`echo $CURRENT_WALLPAPER_IMAGE_BLOCK | tr ' ' '\n' | grep 'Image=' | tail --bytes=+14 | head -1`"
 echo "Found Wallpaper Image: $CURRENT_WALLPAPER_IMAGE"
 
 echo "Executing feh: feh --bg-fill $CURRENT_WALLPAPER_IMAGE"
